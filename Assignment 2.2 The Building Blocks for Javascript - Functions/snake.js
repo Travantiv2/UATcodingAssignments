@@ -10,7 +10,7 @@ const pauseBtn = document.getElementById('pauseBtn'); // Pause button element
 const restartBtn = document.getElementById('restartBtn'); // Restart button element, shown after game over
 const controls = document.getElementById('controls'); // Container for game controls (pause/restart)
 const scoreDisplay = document.getElementById('scoreDisplay'); // Displays the current score
-const gameMessage = document.getElementById('gameMessage'); // Displays game messages (e.g., Game Over)
+const gameMessage = document.getElementById('gameMessage'); // Displays game messages (game over, etc)
 
 // Game configuration and state
 const gridSize = 20; // Size of each tile (snake body part and food) in pixels
@@ -29,7 +29,7 @@ function startGame() {
     canvas.style.display = 'block'; // Show the canvas where the game is drawn
     controls.style.display = 'block'; // Show the game control buttons (pause/restart)
     resetGame(); // Reset the game state (snake, score, etc.)
-    gameInterval = setInterval(gameLoop, 100); // Start the game loop, running every 100ms
+    gameInterval = setInterval(gameLoop, 100); // Start the game loop
     gameMessage.innerHTML = ''; // Clear any previous game over message
 }
 
