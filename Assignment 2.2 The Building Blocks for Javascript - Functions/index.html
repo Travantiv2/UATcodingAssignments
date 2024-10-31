@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Travanti Lipson Jr (10/21/24)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title> <!-- The title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file for styling -->
+</head>
+
+<body>
+    <!-- The initial start screen -->
+    <div id="startScreen">
+        <h1>Snake Game</h1> <!-- The title of the game displayed on the start screen -->
+        <button id="startBtn">Start Game</button> <!-- Start button to begin the game -->
+    </div>
+    
+    <!-- Main game area, hidden initially, shown when the game starts -->
+    <div id="gameArea" style="display: none;">
+        <h2 id="scoreDisplay">Score: 0</h2> <!-- Displays the current score -->
+        <canvas id="gameCanvas" width="400" height="400"></canvas> <!-- Canvas where the game (snake and food) is rendered -->
+        <div id="gameMessage"></div> <!-- Displays messages like "Game Over" -->
+        <div id="controls">
+            <button id="pauseBtn">Pause</button> <!-- Button to pause or resume the game -->
+            <button id="restartBtn" style="display: none;">Restart</button> <!-- Button to restart the game after game over -->
+        </div>
+    </div>
+
+    <script src="snake.js"></script> <!-- Link to the  JavaScript file containing game logic -->
+</body>
+
+</html>
