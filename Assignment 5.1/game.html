@@ -1,0 +1,57 @@
+<!--11/17/24-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the site responsive -->
+    <title>Game Page</title> <!-- Title of the page -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external stylesheet for this page -->
+</head>
+<body>
+
+    <!-- Header section for the page -->
+    <header>
+        <h1>Game</h1> <!-- Page Title -->
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <h2>Navigation</h2> <!-- Navigation header -->
+        <a href="./index.html">Home</a> <!-- Link to Home -->
+        <a href="./boards.html">Boards</a> <!-- Link to Boards page -->
+        <a href="./table.html">Table</a> <!-- Link to Table page -->
+        <a href="./palindrome.html">Palindrome</a> <!-- Link to Palindrome page -->
+        <a href="./validation.html">Validation</a> <!-- Link to Validation page -->
+        <a href="./game.html">Game</a> <!-- Current page link -->
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <section id="startScreen">
+            <h2>Welcome to the Game!</h2> <!-- Welcome message -->
+            <img id="fake error" src="fakegameerror.jfif" alt="fake game load error">
+        </section>
+
+        <section id="gameArea" style="display:none;">
+            <canvas id="gameCanvas" width="400" height="400"></canvas> <!-- Game canvas -->
+            <div id="controls">
+                <button id="pauseBtn">Pause</button> <!-- Pause button -->
+                <button id="restartBtn" style="display:none;">Restart</button> <!-- Restart button -->
+            </div>
+            <p id="scoreDisplay">Score: 0</p> <!-- Score display -->
+            <p id="gameMessage"></p> <!-- Game message area -->
+        </section>
+    </main>
+
+    <!-- Footer section for contact information -->
+    <footer>
+        Travanti Lipson Jr<br> <!-- Your name -->
+        University of Advancing Technology<br> <!-- University name -->
+        2625 W. Baseline Road<br> <!-- University address -->
+        Tempe, AZ 85283<br> <!-- City, state, zip -->
+    </footer>
+
+    <!-- Linking the game script -->
+    <script src="scripts/game.js"></script> <!-- JavaScript file for the game -->
+</body>
+</html>

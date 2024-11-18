@@ -1,0 +1,51 @@
+/* General styling for all pages */
+body 
+  {
+    font-family: Arial, sans-serif; /* Default font for all pages */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header
+  {
+    background-color: #e6e6fa; /* Light lavender for the first pages */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Navigation styles */
+  nav 
+  {
+    background-color: #d8bfd8; /* Thistle, a slightly darker purple */
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  nav a 
+  {
+    color: black; /* Text remains black for links */
+    text-decoration: none; /* No underline for links */
+  }
+  
+  nav a:hover 
+  {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Main content styles */
+  main 
+  {
+    padding: 20px;
+    background-color: #dda0dd; /* Medium orchid, progressively purpler */
+  }
+  
+  /* Footer styles */
+  footer 
+  {
+    background-color: #ba55d3; /* Darker purple for the footer */
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
